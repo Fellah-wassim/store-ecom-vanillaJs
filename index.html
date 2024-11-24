@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/assets/img/favicon.png" />
+    <script defer src="script.js"></script>
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="shopping-cart visible">
+      <header class="shopping-cart-header">
+        <img
+          src="/assets/svg/arrow-right.svg"
+          class="arrow-right-icon hide-cart-button"
+          alt="Close cart"
+        />
+        <div>
+          <span>Total: </span>
+          <span class="shopping-cart-total-price">$0</span>
+        </div>
+        <div>
+          <span class="badge cart-indicator">0</span>
+          <img src="/assets/svg/cart.svg" class="cart-icon" alt="Cart" />
+        </div>
+      </header>
+      <ul class="shopping-cart-items"></ul>
+      <button class="remove-all-from-cart">Remove All</button>
+    </div>
+    <div class="modal hidden"></div>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <ul class="menu-items">
+          <li>
+            <span class="cart-indicator badge" data-indicator="0">0</span>
+            <img
+              src="/assets/svg/cart.svg"
+              class="cart-icon show-cart-btn"
+              alt="Cart"
+            />
+          </li>
+        </ul>
+        <h1 class="logo">Munnich Store</h1>
+      </div>
+    </nav>
+    <main class="product-container"></main>
+  </body>
+</html>
